@@ -1,0 +1,5 @@
+project 'MiniChat.xcodeproj'
+target 'MiniChat' do
+  pod 'OHMySQL'
+
+end

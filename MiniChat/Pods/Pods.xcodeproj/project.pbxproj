@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003B03B5BDE1B43C9AF6CAAEC08089BC /* mysql_mdl.h in Headers */ = {isa = PBXBuildFile; fileRef = 59376C4FDCE630C23ABFE3B75BD02C6E /* mysql_mdl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01F98D168BDB35B2D0ABBC0D6C9E2E2A /* OHCharsetEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615679AD67B56824D480DE6BAA2A115 /* OHCharsetEncoding.m */; };
+		036724E0C89AB6F267BF22E5E9982FE2 /* OHMySQLContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E487BE7F2C6023E10DF3F9E2504CDF /* OHMySQLContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		077D5D7DAB80ABE4080030A05B85F867 /* my_thread_local.h in Headers */ = {isa = PBXBuildFile; fileRef = 42487976E67A8A3FAAD3BEAC11C8110E /* my_thread_local.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DBB315F242F2D4F46839CC22C2A8957 /* mysql_idle.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B255A5979C66DF4A8FAFA2AE70DEC9 /* mysql_idle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		102A0F9B874E78E11528262BDF9F9A33 /* OHSSLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB67D15A03B804AAEF2478D8C264634 /* OHSSLConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11E69C94E39BFAE6EF58BB900A20B26B /* NSString+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3F1E1DDA691A16773FE7113DE03DF /* NSString+OHSerialization.m */; };
+		1BC83B849F32DA74AAEB675CC0D423F9 /* NSData+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E64374C969CD1A942FFB197B39BAA5 /* NSData+OHSerialization.m */; };
+		1C7D1FDE726F1F130F6535F51E02BAD6 /* NSString+Escaping.h in Headers */ = {isa = PBXBuildFile; fileRef = CE32A918AE18E3695C2B437BE1678441 /* NSString+Escaping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1EA50869C6EBC0061875CEF2AD61F2DF /* my_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = E5347F0B1B4DA72FD9665FE754F8A4BB /* my_xml.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		214FB32F38431A33411F9E18A1B04D22 /* mysql_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E35FCAAFEE8215B75A1B7DF9D7E9C5 /* mysql_memory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27E015619ECF9EDC54B48010C8386646 /* mysql_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3D96ABC3A4F3913C87951A6D9D3085 /* mysql_table.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2861B9B63FA749973D72F9D2A9F7F170 /* OHMySQLTimeline.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F6AB73D00DC4583FB06B24AE066720 /* OHMySQLTimeline.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29A4A8FBF3964446202AAE38A41BF218 /* OHSSLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 058615559EC770773F72628A454C8375 /* OHSSLConfig.m */; };
+		29D16DBD88491A4D215CEAF552211391 /* OHMySQLQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E4211AF8D2BD237E240134389A75B /* OHMySQLQueryContext.m */; };
+		2AB4EEA4B2A58BABED726A6EC5F6AC88 /* psi.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A89C88B5278866235B58B845F0FC07 /* psi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C16B25055F2805E28E8887517D4F113 /* OHResultErrorType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAABB7C614953C3CD4BE810D2296E74 /* OHResultErrorType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E6D157B68CF9141B907F8D7BEF5B10F /* OHMySQLStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 977E6300DED866F37A867CACADD799CA /* OHMySQLStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E74EC924C90ECECF51292A066ACF08F /* sql_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0AF9C157BB8CD2E0929D15586070A9 /* sql_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F93DC1ADBAA17DDDB6871C752254D5A /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D95C5ADF027AA2C8C61FDCF22D9BA9B /* NSString+Utility.m */; };
+		2FDA3FD788B4C94DDE2E8F55B050F424 /* OHMySQLQueryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 982D6687A67AFD5420E0C38A28DBC6F0 /* OHMySQLQueryContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31568D7B311B3E809D24B9DDB3B6610E /* keycache.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EE23969820FFB75B0DC66CE21E7510 /* keycache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31DD1AE5C47F9E8F547809245A4E1D20 /* mysql_com_server.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BBBDF5BC816DBF268F3B30FE1A15B75 /* mysql_com_server.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36CC0064E02320CD87A0CC78A70EE38C /* OHMySQLUser.h in Headers */ = {isa = PBXBuildFile; fileRef = C557D90A1ABBBE7A3EFB8A009855C46F /* OHMySQLUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38488534AD8781FD465590D8F8015E83 /* NSNumber+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E97D43406EBF56C25FF48C3B422789 /* NSNumber+OHSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		391F1A370F697F7F1F1DBF5A6984C350 /* OHMySQL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9D4622D65E9D8295CD3038C86B2086 /* OHMySQL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AF575832EE766DE9D987CCBD74F2F7C /* client_authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 49368079971E6879269839A72D87684C /* client_authentication.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D096799ACA27501EAA521469BB30709 /* OHMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F5A77EF8D31AD81338B1A5E284ECF2 /* OHMappingProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F6D2D27257013328A8DC55ED468854D /* mysql_ps.h in Headers */ = {isa = PBXBuildFile; fileRef = D01A368FFBDF972E66E51C2822883C8C /* mysql_ps.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F7CD95105A9042AEF018040802979D1 /* decimal.h in Headers */ = {isa = PBXBuildFile; fileRef = A35B3D6887F9F24A65A76EF19474BB3B /* decimal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41538842674134CE9A29022768B41915 /* mysqld_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF2F47D13741E99322CF80DF12F6675 /* mysqld_error.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		426832CC49DFE186729CEF315E0F3D98 /* OHJoinConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 071E91F733151818D51D723ABEA190CD /* OHJoinConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		426D3A77DEFEBF9A5223B41A27208E66 /* mysql_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE7B15C443595FB99ED9A97644F455E /* mysql_thread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		432C30A87FDBDEC4E9FCB9D9A893F7EB /* thr_mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = A7039BA7B23CE8D8FDA8FC8244AA1E5B /* thr_mutex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46F405EB138716C484AD0CAD69EC4731 /* sql_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9D8B0CA13C000D170FB717C67F6A6F /* sql_state.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4715C52518C33935001BE586A1B74052 /* my_byteorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8E6D441183D47F3E19E2327C29661A /* my_byteorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48A8C496DF0E78D5704CDE5F7DF90B88 /* OHMySQLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E57B1B9CA54447FFAABA3CE1C434FA3 /* OHMySQLContainer.m */; };
+		4BD1514BEC5554F77D35A84CB6FD5207 /* OHMySQLQueryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E56D916A3F4A6B86D873DCF6060B627F /* OHMySQLQueryRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EAE8385151029E251545F4781D58DC8 /* byte_order_generic.h in Headers */ = {isa = PBXBuildFile; fileRef = D4069EB0C86B4B540C1E3F7398A9A460 /* byte_order_generic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F0BD44B4DF9BC0D9F3D9C8F672EFBB1 /* OHMySQLQueryRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5D5926E4DE093500D03FFE5E23CE45 /* OHMySQLQueryRequestFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		526BAA4396EA1A6265EAD59FC8329337 /* service_mysql_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C7C3AE883822FD30B3D0AF21ED615B /* service_mysql_alloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54A370DE5F2EEB632A811DD00A101694 /* plugin_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFF6F1711136A01E2F069AC48E65F26 /* plugin_trace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55C30B2376336E25DB293975D50D2929 /* service_my_snprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = 310DBFD31E95A2CF9B24898A7894AC6E /* service_my_snprintf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A7E425B28701AC8409BA47BFEED3D86 /* client_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D5146CAB96D303D639DD188992D97DFD /* client_plugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BA5044E7AA49F25EE81DE939128224C /* my_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4A7E6E913C8E5502F19F45E4984475 /* my_dir.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FE6E4004AF888D42EB02B70557368D7 /* NSString+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6322467F6EA79F213F657B9DDBB1BE06 /* NSString+Utility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		607D8D5466B5DDCADF2C07A20AEA936D /* my_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F9B3BEBA283D05D8A02D30BB6E6B3D /* my_alloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60B8ACE5E187C78B0AC082C18BB47A25 /* mysql_lex_string.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1DD5892B44056C76DF1F704403ED16 /* mysql_lex_string.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6275E949ED749904EA6F7B525F0975CA /* thr_rwlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D82C486777DBAA44105B551B05FA44 /* thr_rwlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63EAC28DD4417EFFB42B5812005D2B86 /* mysql_com.h in Headers */ = {isa = PBXBuildFile; fileRef = D06EF6239BD73CB14AA7C493E218EF23 /* mysql_com.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67926CEC2E0040F11F9C3969D9689735 /* get_password.h in Headers */ = {isa = PBXBuildFile; fileRef = 801C37327C68F4ED1CC8B00DA17C8702 /* get_password.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68278E2BF588B6FA5A18D5E439E24694 /* OHProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = F94176BD4BBB32E6AF3A49A19CE8F1EF /* OHProtocolType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D8C06B777EFCC9A7DA9C35A8F5338E7 /* mysql_stage.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF4D263D08708F757FA416C6EA8DA94 /* mysql_stage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		774F76C050D06CC14C2FCC1DD9A892B8 /* OHJoinConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7F288920AF9A6ECF315C9646DCFF9 /* OHJoinConstants.m */; };
+		775EA6DF1B7E04B536C5FC70DDE57F1D /* thr_cond.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6EA26FEE6224812EE9A52A566C639 /* thr_cond.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AB8610E856A2AA6D0117F359F7453E5 /* plugin_auth_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B94804EC29D4800AB826A36C400155 /* plugin_auth_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DA98BAAD4B797DCABF0582AD69217E6 /* my_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B94BFF6D1609FA884F1F07E6072F9BE /* my_list.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E12DCD8C3F00EED3D808406EBBCE753 /* sslopt-vars.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D4DAC364FFBCB611E561D626AD3A65 /* sslopt-vars.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84FBB8E94069C00498F5899EC7CBBD96 /* OHMySQLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B1F87F0324C9AFFCEAD06429D5F5 /* OHMySQLSerialization.m */; };
+		876F1669E37EF1C2491030CE8E478E51 /* NSNumber+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D267D122F488131DB87B652EF085A2 /* NSNumber+OHSerialization.m */; };
+		87ABDE61AE2A52C3034EF0FA46B8254D /* sslopt-case.h in Headers */ = {isa = PBXBuildFile; fileRef = C85AEA14AACEE060598DA3EA141114D8 /* sslopt-case.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A99D0808951425F32013B346A311163 /* OHMySQLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2FA3B90A62D740564E13C02D752D49 /* OHMySQLSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8BA1E2251FB0F7912ACD57542B8A0F2C /* OHMySQLQueryRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22152F9D07BCFAD8DE30AA528A2FDF53 /* OHMySQLQueryRequestFactory.m */; };
+		8CE04464C693FE62060F0C9A3D6A47AD /* my_getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = DF77BEBCB97C4C576B60BAFF7642886B /* my_getopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D283CB637B57E8C982F7DB5C0C2B71C /* psi_base.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EC8A07CD91D9A5E333AB74F4508C7B /* psi_base.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8ED56E2967F683CE1DF370A5CEE1D32F /* binary_log_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 710245966F466483A872CECB2CC45F76 /* binary_log_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90EC7030EF37FE709EE775C33EB082CC /* OHMySQLStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A46FB4CA8247F66AB4E6BAEB07597640 /* OHMySQLStoreCoordinator.m */; };
+		9302BA01FAC553CE3368BF1039713711 /* my_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 573FD7AFC7CA4ACF9551B9237BBDD2D6 /* my_thread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98E134D0935D6E67B934B742D8943D9C /* my_global.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB96EC5E85D4430C0AB41F8B759535D /* my_global.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C97AE7E0082FEC49A07E4384426125F /* mysql_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D8B17F709CF2A9254F47F535EF1500 /* mysql_file.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D635C33166CF64D8CB3DF49A939CAB3 /* mysql_version.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF7B0F47FAA206746CF95576B672234 /* mysql_version.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F262F07F17FCECFCD1867456F44DF41 /* my_sys.h in Headers */ = {isa = PBXBuildFile; fileRef = 814A555BCB175C588E1030D9ED0AEAD4 /* my_sys.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5840B0FAF815060DD67D4499D088EFB /* my_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5A7FE403E4DDCC3264B72EB71882FA /* my_config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9785A87A037F5427876A9CC58958724 /* OHRefreshOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 124B935CE2A1B3B5B8FC655214DC49E1 /* OHRefreshOptions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC157448AEB4539EC3DD703ADDD1630C /* errmsg.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B2BCE52B3164D31F7E9CDA3C3D2B6B /* errmsg.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC19E3500E307F3E9892DE68A706F1B8 /* big_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 8286AE7374F2CDC944CF3E49AD6C6F41 /* big_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE9172DCCB6D2C7F7F5AC4C987389E1A /* m_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6CE44CFABC1F50E65CA97ED290075A /* m_ctype.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0F45EA524A8570D419D6E9D58C89B59 /* OHMySQLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F488F2633E803E9DE633AB06D3490F /* OHMySQLUser.m */; };
+		B32F3138431710959B8ECC4BEFFB182A /* mysql_embed.h in Headers */ = {isa = PBXBuildFile; fileRef = 14890C8847693660BD09702511FA7FCC /* mysql_embed.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5E74FF3A3572FD0161160ABD234B5BC /* mysqld_ername.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C985CC334BC8ADE7A70239128731CF1 /* mysqld_ername.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B61A818C3CA490536C5D46DE82887F5A /* OHLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2927B3B1B17314A573E89B1BF41482AD /* OHLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8A5CED5FE57B693BA041820F98FA42B /* OHMySQLStoreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAF1E49DBBDED781E2A80C08D6A3A1B /* OHMySQLStoreCoordinator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE629E3C49368694A410589EE80EA1AE /* typelib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9A35C6A0698CDCBB897E2091D4A392 /* typelib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE84462BD8FC06509CAE5FA025F27EF8 /* my_command.h in Headers */ = {isa = PBXBuildFile; fileRef = D17092D61CC1CA6515D766D4F15EB90B /* my_command.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D012E93821A8B1870B291475407B5FF2 /* mysql_sp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4160F2D26D272529D6D1D1638C57E0D5 /* mysql_sp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0CD2F86F8A9AE45F5DC6882A24DBD1F /* OHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D446AF86EA79AE120FE51150F4F015A /* OHConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D44B4AF05D60A4FE7D7C51CF436A9B6E /* mysql_statement.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C27A0D7FEBF90BA58514F82A0D7E8A /* mysql_statement.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA6685322607B0ED4B5CCFD8AE39AB69 /* OHMySQLTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D91A744E378778FD61C2D7E5F3EC /* OHMySQLTimeline.m */; };
+		DC83BFECEE48565A0269E23CEA50591D /* mysql_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A99C6515CE33B21DE03667F8450D1E /* mysql_socket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD6B34CBE5B22BB12DB7C80321F99902 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = B260AF12938CED8D1C05A6B81F697E44 /* NSString+Escaping.m */; };
+		E037C24B9870A411829793AC1EC6AB9F /* OHMySQLQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C056AB30A3A04815D566458890A3D /* OHMySQLQueryRequest.m */; };
+		E08214BCB2F68658A84FD0BEE876933F /* psi_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3C7DD9B667AB4C09BD70818C645585 /* psi_memory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0F9B6A700862BCE7C5539158B9B6FAD /* my_dbug.h in Headers */ = {isa = PBXBuildFile; fileRef = 41794A84FB0D332065E1E1F7C0871B49 /* my_dbug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3E877F476C889DB466A5DB338836C32 /* OHCharsetEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BFC597CA825B21CE479952E372ED32 /* OHCharsetEncoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4220ADA8174ABDE6A53BD207152C8BA /* OHMySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A36A95F8D15F7E0B8CE156945D172D7 /* OHMySQLStore.m */; };
+		E4C6AECCE69C94EA5287EFA77BF3DFF1 /* NSData+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B92685E8B32834BCFC6051F5F8326D1F /* NSData+OHSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E625F1D8F13908BCB31B0C770888B894 /* sslopt-longopts.h in Headers */ = {isa = PBXBuildFile; fileRef = 996DE06647D68FB123218F41C2EDE837 /* sslopt-longopts.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E737C54F72EE9055D584D8052F76A322 /* byte_order_generic_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 0469800C250F315796C2914E1056DC12 /* byte_order_generic_x86.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8466F013A2FD5AA8F751833BECBAF2C /* NSObject+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD206BB17A254BBB1AF69382921B568 /* NSObject+Mapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E91D76CE6ECF2EDD8417839F27B8BE52 /* little_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1CEE8DD176F9C9C483439DF40E65B8 /* little_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED9035B712A07CEAD71AA0CAB68D4FD1 /* my_compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA1CB43CCDE6C4B31814BAAB4897F58 /* my_compiler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0426D6FDE444137BD57F71DDE3DB279 /* NSObject+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E2F0470BDEA18C1FC617FFB49DB116 /* NSObject+Mapping.m */; };
+		F23763F83D9195C566AA24AEDF9083AA /* m_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 02232DC0CC38FD6B9EB302653EDC57D4 /* m_string.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2572688AFD089FCA430754E4BD4F419 /* OHMySQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC8C6BD445E0EA596AB208397E5668 /* OHMySQL-dummy.m */; };
+		F650554DB87C5D546448104A70D5CD66 /* OHSerializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F56516C7B0FD54B6A8B753131F832A /* OHSerializationProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F73D56524614C9DB3F0D8B1A4CDE988A /* Pods-MiniChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E00FF0A350DBF6C93773BC2CDA076F3 /* Pods-MiniChat-dummy.m */; };
+		F78AE6761451AD3CF8D590F6540F9D80 /* mysql.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5CA91D216EA68498DE455A05A177F /* mysql.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FBBF53DC564BFCBC130E8E54AA161FF2 /* NSString+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FA424374B7C972A14291D1A25C6F35 /* NSString+OHSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCE6B443ECD59C633B066449904D675C /* mysql_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D030CA121C1F03A5972A841CAE83C21 /* mysql_time.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE527559012C64D925F37E59EE93C3EA /* mysql_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F0D2D3EC293ABA23FD8D0117AFC1DF /* mysql_transaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24E19DBCD7E304EBC1A383A58EB7F42F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523C0639A1C4C93383B4DF83058D0094;
+			remoteInfo = OHMySQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A99C6515CE33B21DE03667F8450D1E /* mysql_socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_socket.h; path = OHMySQL/lib/include/mysql/psi/mysql_socket.h; sourceTree = "<group>"; };
+		02232DC0CC38FD6B9EB302653EDC57D4 /* m_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_string.h; path = OHMySQL/lib/include/m_string.h; sourceTree = "<group>"; };
+		0469800C250F315796C2914E1056DC12 /* byte_order_generic_x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic_x86.h; path = OHMySQL/lib/include/byte_order_generic_x86.h; sourceTree = "<group>"; };
+		058615559EC770773F72628A454C8375 /* OHSSLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHSSLConfig.m; path = OHMySQL/Models/OHSSLConfig.m; sourceTree = "<group>"; };
+		071E91F733151818D51D723ABEA190CD /* OHJoinConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHJoinConstants.h; path = OHMySQL/Constants/OHJoinConstants.h; sourceTree = "<group>"; };
+		07F0D2D3EC293ABA23FD8D0117AFC1DF /* mysql_transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_transaction.h; path = OHMySQL/lib/include/mysql/psi/mysql_transaction.h; sourceTree = "<group>"; };
+		0C6CE44CFABC1F50E65CA97ED290075A /* m_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_ctype.h; path = OHMySQL/lib/include/m_ctype.h; sourceTree = "<group>"; };
+		0F18050C6BD9B659012D2FF36CF52EB1 /* OHMySQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.debug.xcconfig; sourceTree = "<group>"; };
+		10C7C3AE883822FD30B3D0AF21ED615B /* service_mysql_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_mysql_alloc.h; path = OHMySQL/lib/include/mysql/service_mysql_alloc.h; sourceTree = "<group>"; };
+		124B935CE2A1B3B5B8FC655214DC49E1 /* OHRefreshOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHRefreshOptions.h; path = OHMySQL/Constants/OHRefreshOptions.h; sourceTree = "<group>"; };
+		12F7B1F87F0324C9AFFCEAD06429D5F5 /* OHMySQLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLSerialization.m; path = OHMySQL/OHMySQLSerialization.m; sourceTree = "<group>"; };
+		14890C8847693660BD09702511FA7FCC /* mysql_embed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_embed.h; path = OHMySQL/lib/include/mysql_embed.h; sourceTree = "<group>"; };
+		1615679AD67B56824D480DE6BAA2A115 /* OHCharsetEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHCharsetEncoding.m; path = OHMySQL/Constants/OHCharsetEncoding.m; sourceTree = "<group>"; };
+		18FC8C6BD445E0EA596AB208397E5668 /* OHMySQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHMySQL-dummy.m"; sourceTree = "<group>"; };
+		1B0AF9C157BB8CD2E0929D15586070A9 /* sql_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_common.h; path = OHMySQL/lib/include/sql_common.h; sourceTree = "<group>"; };
+		1C9D8B0CA13C000D170FB717C67F6A6F /* sql_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_state.h; path = OHMySQL/lib/include/sql_state.h; sourceTree = "<group>"; };
+		1E57777CD20DD8BD25D4B5F371555C99 /* Pods-MiniChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiniChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E8C056AB30A3A04815D566458890A3D /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequest.m; path = OHMySQL/Models/OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		22152F9D07BCFAD8DE30AA528A2FDF53 /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequestFactory.m; path = OHMySQL/OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		26B2BCE52B3164D31F7E9CDA3C3D2B6B /* errmsg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errmsg.h; path = OHMySQL/lib/include/errmsg.h; sourceTree = "<group>"; };
+		2927B3B1B17314A573E89B1BF41482AD /* OHLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHLogging.h; path = OHMySQL/Constants/OHLogging.h; sourceTree = "<group>"; };
+		29B255A5979C66DF4A8FAFA2AE70DEC9 /* mysql_idle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_idle.h; path = OHMySQL/lib/include/mysql/psi/mysql_idle.h; sourceTree = "<group>"; };
+		2B94BFF6D1609FA884F1F07E6072F9BE /* my_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_list.h; path = OHMySQL/lib/include/my_list.h; sourceTree = "<group>"; };
+		2D95C5ADF027AA2C8C61FDCF22D9BA9B /* NSString+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "OHMySQL/Categories/NSString+Utility.m"; sourceTree = "<group>"; };
+		2DAABB7C614953C3CD4BE810D2296E74 /* OHResultErrorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHResultErrorType.h; path = OHMySQL/Constants/OHResultErrorType.h; sourceTree = "<group>"; };
+		2E6E4211AF8D2BD237E240134389A75B /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryContext.m; path = OHMySQL/OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		2F9A35C6A0698CDCBB897E2091D4A392 /* typelib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = typelib.h; path = OHMySQL/lib/include/typelib.h; sourceTree = "<group>"; };
+		2FE7F288920AF9A6ECF315C9646DCFF9 /* OHJoinConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHJoinConstants.m; path = OHMySQL/Constants/OHJoinConstants.m; sourceTree = "<group>"; };
+		310DBFD31E95A2CF9B24898A7894AC6E /* service_my_snprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_my_snprintf.h; path = OHMySQL/lib/include/mysql/service_my_snprintf.h; sourceTree = "<group>"; };
+		34D4DAC364FFBCB611E561D626AD3A65 /* sslopt-vars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-vars.h"; path = "OHMySQL/lib/include/sslopt-vars.h"; sourceTree = "<group>"; };
+		37D267D122F488131DB87B652EF085A2 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+OHSerialization.m"; path = "OHMySQL/Categories/NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		38D3F1E1DDA691A16773FE7113DE03DF /* NSString+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OHSerialization.m"; path = "OHMySQL/Categories/NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		3DB67D15A03B804AAEF2478D8C264634 /* OHSSLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSSLConfig.h; path = OHMySQL/Models/OHSSLConfig.h; sourceTree = "<group>"; };
+		3DE6EA26FEE6224812EE9A52A566C639 /* thr_cond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_cond.h; path = OHMySQL/lib/include/thr_cond.h; sourceTree = "<group>"; };
+		3EE7B15C443595FB99ED9A97644F455E /* mysql_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_thread.h; path = OHMySQL/lib/include/mysql/psi/mysql_thread.h; sourceTree = "<group>"; };
+		3FFF6F1711136A01E2F069AC48E65F26 /* plugin_trace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_trace.h; path = OHMySQL/lib/include/mysql/plugin_trace.h; sourceTree = "<group>"; };
+		4160F2D26D272529D6D1D1638C57E0D5 /* mysql_sp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_sp.h; path = OHMySQL/lib/include/mysql/psi/mysql_sp.h; sourceTree = "<group>"; };
+		41794A84FB0D332065E1E1F7C0871B49 /* my_dbug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dbug.h; path = OHMySQL/lib/include/my_dbug.h; sourceTree = "<group>"; };
+		42487976E67A8A3FAAD3BEAC11C8110E /* my_thread_local.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread_local.h; path = OHMySQL/lib/include/my_thread_local.h; sourceTree = "<group>"; };
+		43EE9B6FE73C85827149C2465B743B7C /* OHMySQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-prefix.pch"; sourceTree = "<group>"; };
+		49368079971E6879269839A72D87684C /* client_authentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_authentication.h; path = OHMySQL/lib/include/mysql/client_authentication.h; sourceTree = "<group>"; };
+		49B94804EC29D4800AB826A36C400155 /* plugin_auth_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_auth_common.h; path = OHMySQL/lib/include/mysql/plugin_auth_common.h; sourceTree = "<group>"; };
+		4A36A95F8D15F7E0B8CE156945D172D7 /* OHMySQLStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStore.m; path = OHMySQL/Models/OHMySQLStore.m; sourceTree = "<group>"; };
+		4CA5CA91D216EA68498DE455A05A177F /* mysql.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql.h; path = OHMySQL/lib/include/mysql.h; sourceTree = "<group>"; };
+		4D3D96ABC3A4F3913C87951A6D9D3085 /* mysql_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_table.h; path = OHMySQL/lib/include/mysql/psi/mysql_table.h; sourceTree = "<group>"; };
+		4E57B1B9CA54447FFAABA3CE1C434FA3 /* OHMySQLContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLContainer.m; path = OHMySQL/OHMySQLContainer.m; sourceTree = "<group>"; };
+		55F488F2633E803E9DE633AB06D3490F /* OHMySQLUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLUser.m; path = OHMySQL/Models/OHMySQLUser.m; sourceTree = "<group>"; };
+		55F9B3BEBA283D05D8A02D30BB6E6B3D /* my_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_alloc.h; path = OHMySQL/lib/include/my_alloc.h; sourceTree = "<group>"; };
+		573FD7AFC7CA4ACF9551B9237BBDD2D6 /* my_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread.h; path = OHMySQL/lib/include/my_thread.h; sourceTree = "<group>"; };
+		59376C4FDCE630C23ABFE3B75BD02C6E /* mysql_mdl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_mdl.h; path = OHMySQL/lib/include/mysql/psi/mysql_mdl.h; sourceTree = "<group>"; };
+		5B5A7FE403E4DDCC3264B72EB71882FA /* my_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_config.h; path = OHMySQL/lib/include/my_config.h; sourceTree = "<group>"; };
+		5BBBDF5BC816DBF268F3B30FE1A15B75 /* mysql_com_server.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com_server.h; path = OHMySQL/lib/include/mysql_com_server.h; sourceTree = "<group>"; };
+		5D446AF86EA79AE120FE51150F4F015A /* OHConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHConstants.h; path = OHMySQL/Constants/OHConstants.h; sourceTree = "<group>"; };
+		6322467F6EA79F213F657B9DDBB1BE06 /* NSString+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "OHMySQL/Categories/NSString+Utility.h"; sourceTree = "<group>"; };
+		6A4A7E6E913C8E5502F19F45E4984475 /* my_dir.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dir.h; path = OHMySQL/lib/include/my_dir.h; sourceTree = "<group>"; };
+		6DB96EC5E85D4430C0AB41F8B759535D /* my_global.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_global.h; path = OHMySQL/lib/include/my_global.h; sourceTree = "<group>"; };
+		6DFAC0AC09F4F682430C400379B7E587 /* libOHMySQL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOHMySQL.a; path = libOHMySQL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E00FF0A350DBF6C93773BC2CDA076F3 /* Pods-MiniChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiniChat-dummy.m"; sourceTree = "<group>"; };
+		6E2FA3B90A62D740564E13C02D752D49 /* OHMySQLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLSerialization.h; path = OHMySQL/OHMySQLSerialization.h; sourceTree = "<group>"; };
+		710245966F466483A872CECB2CC45F76 /* binary_log_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = binary_log_types.h; path = OHMySQL/lib/include/binary_log_types.h; sourceTree = "<group>"; };
+		72E487BE7F2C6023E10DF3F9E2504CDF /* OHMySQLContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLContainer.h; path = OHMySQL/OHMySQLContainer.h; sourceTree = "<group>"; };
+		75F5A77EF8D31AD81338B1A5E284ECF2 /* OHMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMappingProtocol.h; path = OHMySQL/OHMappingProtocol.h; sourceTree = "<group>"; };
+		7BF2F47D13741E99322CF80DF12F6675 /* mysqld_error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_error.h; path = OHMySQL/lib/include/mysqld_error.h; sourceTree = "<group>"; };
+		7C985CC334BC8ADE7A70239128731CF1 /* mysqld_ername.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_ername.h; path = OHMySQL/lib/include/mysqld_ername.h; sourceTree = "<group>"; };
+		7D9D4622D65E9D8295CD3038C86B2086 /* OHMySQL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQL.h; path = OHMySQL/OHMySQL.h; sourceTree = "<group>"; };
+		7EAF1E49DBBDED781E2A80C08D6A3A1B /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStoreCoordinator.h; path = OHMySQL/OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		7F8E6D441183D47F3E19E2327C29661A /* my_byteorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_byteorder.h; path = OHMySQL/lib/include/my_byteorder.h; sourceTree = "<group>"; };
+		801C37327C68F4ED1CC8B00DA17C8702 /* get_password.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = get_password.h; path = OHMySQL/lib/include/mysql/get_password.h; sourceTree = "<group>"; };
+		80D82C486777DBAA44105B551B05FA44 /* thr_rwlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_rwlock.h; path = OHMySQL/lib/include/thr_rwlock.h; sourceTree = "<group>"; };
+		8140449D80C4FAFD069745C74E2F0A67 /* OHMySQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.release.xcconfig; sourceTree = "<group>"; };
+		814A555BCB175C588E1030D9ED0AEAD4 /* my_sys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_sys.h; path = OHMySQL/lib/include/my_sys.h; sourceTree = "<group>"; };
+		8286AE7374F2CDC944CF3E49AD6C6F41 /* big_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = big_endian.h; path = OHMySQL/lib/include/big_endian.h; sourceTree = "<group>"; };
+		8D030CA121C1F03A5972A841CAE83C21 /* mysql_time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_time.h; path = OHMySQL/lib/include/mysql_time.h; sourceTree = "<group>"; };
+		94D2D91A744E378778FD61C2D7E5F3EC /* OHMySQLTimeline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLTimeline.m; path = OHMySQL/Models/OHMySQLTimeline.m; sourceTree = "<group>"; };
+		977E6300DED866F37A867CACADD799CA /* OHMySQLStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStore.h; path = OHMySQL/Models/OHMySQLStore.h; sourceTree = "<group>"; };
+		97D8B17F709CF2A9254F47F535EF1500 /* mysql_file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_file.h; path = OHMySQL/lib/include/mysql/psi/mysql_file.h; sourceTree = "<group>"; };
+		982D6687A67AFD5420E0C38A28DBC6F0 /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryContext.h; path = OHMySQL/OHMySQLQueryContext.h; sourceTree = "<group>"; };
+		98FA424374B7C972A14291D1A25C6F35 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OHSerialization.h"; path = "OHMySQL/Categories/NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		996DE06647D68FB123218F41C2EDE837 /* sslopt-longopts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-longopts.h"; path = "OHMySQL/lib/include/sslopt-longopts.h"; sourceTree = "<group>"; };
+		99A89C88B5278866235B58B845F0FC07 /* psi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi.h; path = OHMySQL/lib/include/mysql/psi/psi.h; sourceTree = "<group>"; };
+		9AB34F4CBF05EA98FBCDE00DE738422A /* Pods-MiniChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiniChat.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E5D5926E4DE093500D03FFE5E23CE45 /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequestFactory.h; path = OHMySQL/OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		9F1CEE8DD176F9C9C483439DF40E65B8 /* little_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = little_endian.h; path = OHMySQL/lib/include/little_endian.h; sourceTree = "<group>"; };
+		A35B3D6887F9F24A65A76EF19474BB3B /* decimal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = decimal.h; path = OHMySQL/lib/include/decimal.h; sourceTree = "<group>"; };
+		A46FB4CA8247F66AB4E6BAEB07597640 /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStoreCoordinator.m; path = OHMySQL/OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		A7039BA7B23CE8D8FDA8FC8244AA1E5B /* thr_mutex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_mutex.h; path = OHMySQL/lib/include/thr_mutex.h; sourceTree = "<group>"; };
+		A7EC8A07CD91D9A5E333AB74F4508C7B /* psi_base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_base.h; path = OHMySQL/lib/include/mysql/psi/psi_base.h; sourceTree = "<group>"; };
+		B260AF12938CED8D1C05A6B81F697E44 /* NSString+Escaping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Escaping.m"; path = "OHMySQL/Categories/NSString+Escaping.m"; sourceTree = "<group>"; };
+		B92685E8B32834BCFC6051F5F8326D1F /* NSData+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+OHSerialization.h"; path = "OHMySQL/Categories/NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		C0A37253A7563D55769FFA96289DD09D /* libmysqlclient.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = OHMySQL/lib/ios/libmysqlclient.a; sourceTree = "<group>"; };
+		C0E64374C969CD1A942FFB197B39BAA5 /* NSData+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OHSerialization.m"; path = "OHMySQL/Categories/NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		C0F6AB73D00DC4583FB06B24AE066720 /* OHMySQLTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLTimeline.h; path = OHMySQL/Models/OHMySQLTimeline.h; sourceTree = "<group>"; };
+		C557D90A1ABBBE7A3EFB8A009855C46F /* OHMySQLUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLUser.h; path = OHMySQL/Models/OHMySQLUser.h; sourceTree = "<group>"; };
+		C7E35FCAAFEE8215B75A1B7DF9D7E9C5 /* mysql_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_memory.h; path = OHMySQL/lib/include/mysql/psi/mysql_memory.h; sourceTree = "<group>"; };
+		C85AEA14AACEE060598DA3EA141114D8 /* sslopt-case.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-case.h"; path = "OHMySQL/lib/include/sslopt-case.h"; sourceTree = "<group>"; };
+		CAA1CB43CCDE6C4B31814BAAB4897F58 /* my_compiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_compiler.h; path = OHMySQL/lib/include/my_compiler.h; sourceTree = "<group>"; };
+		CE32A918AE18E3695C2B437BE1678441 /* NSString+Escaping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Escaping.h"; path = "OHMySQL/Categories/NSString+Escaping.h"; sourceTree = "<group>"; };
+		D01A368FFBDF972E66E51C2822883C8C /* mysql_ps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_ps.h; path = OHMySQL/lib/include/mysql/psi/mysql_ps.h; sourceTree = "<group>"; };
+		D06EF6239BD73CB14AA7C493E218EF23 /* mysql_com.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com.h; path = OHMySQL/lib/include/mysql_com.h; sourceTree = "<group>"; };
+		D0BFC597CA825B21CE479952E372ED32 /* OHCharsetEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHCharsetEncoding.h; path = OHMySQL/Constants/OHCharsetEncoding.h; sourceTree = "<group>"; };
+		D17092D61CC1CA6515D766D4F15EB90B /* my_command.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_command.h; path = OHMySQL/lib/include/my_command.h; sourceTree = "<group>"; };
+		D1C27A0D7FEBF90BA58514F82A0D7E8A /* mysql_statement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_statement.h; path = OHMySQL/lib/include/mysql/psi/mysql_statement.h; sourceTree = "<group>"; };
+		D4069EB0C86B4B540C1E3F7398A9A460 /* byte_order_generic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic.h; path = OHMySQL/lib/include/byte_order_generic.h; sourceTree = "<group>"; };
+		D5146CAB96D303D639DD188992D97DFD /* client_plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_plugin.h; path = OHMySQL/lib/include/mysql/client_plugin.h; sourceTree = "<group>"; };
+		DA3C7DD9B667AB4C09BD70818C645585 /* psi_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_memory.h; path = OHMySQL/lib/include/mysql/psi/psi_memory.h; sourceTree = "<group>"; };
+		DC417084E624A40482AF2AD282D57C0D /* Pods-MiniChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiniChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF77BEBCB97C4C576B60BAFF7642886B /* my_getopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_getopt.h; path = OHMySQL/lib/include/my_getopt.h; sourceTree = "<group>"; };
+		E3F56516C7B0FD54B6A8B753131F832A /* OHSerializationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSerializationProtocol.h; path = OHMySQL/OHSerializationProtocol.h; sourceTree = "<group>"; };
+		E4EE23969820FFB75B0DC66CE21E7510 /* keycache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = keycache.h; path = OHMySQL/lib/include/keycache.h; sourceTree = "<group>"; };
+		E5347F0B1B4DA72FD9665FE754F8A4BB /* my_xml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_xml.h; path = OHMySQL/lib/include/my_xml.h; sourceTree = "<group>"; };
+		E56D916A3F4A6B86D873DCF6060B627F /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequest.h; path = OHMySQL/Models/OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		EA5733555F728F10B8110CECB0B33843 /* libPods-MiniChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MiniChat.a"; path = "libPods-MiniChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF4D263D08708F757FA416C6EA8DA94 /* mysql_stage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_stage.h; path = OHMySQL/lib/include/mysql/psi/mysql_stage.h; sourceTree = "<group>"; };
+		F0E2F0470BDEA18C1FC617FFB49DB116 /* NSObject+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Mapping.m"; path = "OHMySQL/Categories/NSObject+Mapping.m"; sourceTree = "<group>"; };
+		F3E97D43406EBF56C25FF48C3B422789 /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+OHSerialization.h"; path = "OHMySQL/Categories/NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		F5AB8514DF4836409069FF8C7F867211 /* Pods-MiniChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiniChat.release.xcconfig"; sourceTree = "<group>"; };
+		F94176BD4BBB32E6AF3A49A19CE8F1EF /* OHProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHProtocolType.h; path = OHMySQL/Constants/OHProtocolType.h; sourceTree = "<group>"; };
+		FB1DD5892B44056C76DF1F704403ED16 /* mysql_lex_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_lex_string.h; path = OHMySQL/lib/include/mysql/mysql_lex_string.h; sourceTree = "<group>"; };
+		FCF7B0F47FAA206746CF95576B672234 /* mysql_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_version.h; path = OHMySQL/lib/include/mysql_version.h; sourceTree = "<group>"; };
+		FFD206BB17A254BBB1AF69382921B568 /* NSObject+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Mapping.h"; path = "OHMySQL/Categories/NSObject+Mapping.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48574C0959195F987252077E86420B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894EF3E55940249DF3C3F3AE3A4EF594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0586491C5B7425A790FDD3C633951EFB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F816334182850494FA6E67B675907DC /* Pods-MiniChat */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		079A49845CCBB2D744E48E7F89CB4CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DFAC0AC09F4F682430C400379B7E587 /* libOHMySQL.a */,
+				EA5733555F728F10B8110CECB0B33843 /* libPods-MiniChat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EFC48EE4597A81B5CB6C5FF562AE2B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35463D817709089E29E78B7E3EB8428B /* OHMySQL */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35463D817709089E29E78B7E3EB8428B /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				8286AE7374F2CDC944CF3E49AD6C6F41 /* big_endian.h */,
+				710245966F466483A872CECB2CC45F76 /* binary_log_types.h */,
+				D4069EB0C86B4B540C1E3F7398A9A460 /* byte_order_generic.h */,
+				0469800C250F315796C2914E1056DC12 /* byte_order_generic_x86.h */,
+				49368079971E6879269839A72D87684C /* client_authentication.h */,
+				D5146CAB96D303D639DD188992D97DFD /* client_plugin.h */,
+				A35B3D6887F9F24A65A76EF19474BB3B /* decimal.h */,
+				26B2BCE52B3164D31F7E9CDA3C3D2B6B /* errmsg.h */,
+				801C37327C68F4ED1CC8B00DA17C8702 /* get_password.h */,
+				E4EE23969820FFB75B0DC66CE21E7510 /* keycache.h */,
+				9F1CEE8DD176F9C9C483439DF40E65B8 /* little_endian.h */,
+				0C6CE44CFABC1F50E65CA97ED290075A /* m_ctype.h */,
+				02232DC0CC38FD6B9EB302653EDC57D4 /* m_string.h */,
+				55F9B3BEBA283D05D8A02D30BB6E6B3D /* my_alloc.h */,
+				7F8E6D441183D47F3E19E2327C29661A /* my_byteorder.h */,
+				D17092D61CC1CA6515D766D4F15EB90B /* my_command.h */,
+				CAA1CB43CCDE6C4B31814BAAB4897F58 /* my_compiler.h */,
+				5B5A7FE403E4DDCC3264B72EB71882FA /* my_config.h */,
+				41794A84FB0D332065E1E1F7C0871B49 /* my_dbug.h */,
+				6A4A7E6E913C8E5502F19F45E4984475 /* my_dir.h */,
+				DF77BEBCB97C4C576B60BAFF7642886B /* my_getopt.h */,
+				6DB96EC5E85D4430C0AB41F8B759535D /* my_global.h */,
+				2B94BFF6D1609FA884F1F07E6072F9BE /* my_list.h */,
+				814A555BCB175C588E1030D9ED0AEAD4 /* my_sys.h */,
+				573FD7AFC7CA4ACF9551B9237BBDD2D6 /* my_thread.h */,
+				42487976E67A8A3FAAD3BEAC11C8110E /* my_thread_local.h */,
+				E5347F0B1B4DA72FD9665FE754F8A4BB /* my_xml.h */,
+				4CA5CA91D216EA68498DE455A05A177F /* mysql.h */,
+				D06EF6239BD73CB14AA7C493E218EF23 /* mysql_com.h */,
+				5BBBDF5BC816DBF268F3B30FE1A15B75 /* mysql_com_server.h */,
+				14890C8847693660BD09702511FA7FCC /* mysql_embed.h */,
+				97D8B17F709CF2A9254F47F535EF1500 /* mysql_file.h */,
+				29B255A5979C66DF4A8FAFA2AE70DEC9 /* mysql_idle.h */,
+				FB1DD5892B44056C76DF1F704403ED16 /* mysql_lex_string.h */,
+				59376C4FDCE630C23ABFE3B75BD02C6E /* mysql_mdl.h */,
+				C7E35FCAAFEE8215B75A1B7DF9D7E9C5 /* mysql_memory.h */,
+				D01A368FFBDF972E66E51C2822883C8C /* mysql_ps.h */,
+				00A99C6515CE33B21DE03667F8450D1E /* mysql_socket.h */,
+				4160F2D26D272529D6D1D1638C57E0D5 /* mysql_sp.h */,
+				EBF4D263D08708F757FA416C6EA8DA94 /* mysql_stage.h */,
+				D1C27A0D7FEBF90BA58514F82A0D7E8A /* mysql_statement.h */,
+				4D3D96ABC3A4F3913C87951A6D9D3085 /* mysql_table.h */,
+				3EE7B15C443595FB99ED9A97644F455E /* mysql_thread.h */,
+				8D030CA121C1F03A5972A841CAE83C21 /* mysql_time.h */,
+				07F0D2D3EC293ABA23FD8D0117AFC1DF /* mysql_transaction.h */,
+				FCF7B0F47FAA206746CF95576B672234 /* mysql_version.h */,
+				7C985CC334BC8ADE7A70239128731CF1 /* mysqld_ername.h */,
+				7BF2F47D13741E99322CF80DF12F6675 /* mysqld_error.h */,
+				B92685E8B32834BCFC6051F5F8326D1F /* NSData+OHSerialization.h */,
+				C0E64374C969CD1A942FFB197B39BAA5 /* NSData+OHSerialization.m */,
+				F3E97D43406EBF56C25FF48C3B422789 /* NSNumber+OHSerialization.h */,
+				37D267D122F488131DB87B652EF085A2 /* NSNumber+OHSerialization.m */,
+				FFD206BB17A254BBB1AF69382921B568 /* NSObject+Mapping.h */,
+				F0E2F0470BDEA18C1FC617FFB49DB116 /* NSObject+Mapping.m */,
+				CE32A918AE18E3695C2B437BE1678441 /* NSString+Escaping.h */,
+				B260AF12938CED8D1C05A6B81F697E44 /* NSString+Escaping.m */,
+				98FA424374B7C972A14291D1A25C6F35 /* NSString+OHSerialization.h */,
+				38D3F1E1DDA691A16773FE7113DE03DF /* NSString+OHSerialization.m */,
+				6322467F6EA79F213F657B9DDBB1BE06 /* NSString+Utility.h */,
+				2D95C5ADF027AA2C8C61FDCF22D9BA9B /* NSString+Utility.m */,
+				D0BFC597CA825B21CE479952E372ED32 /* OHCharsetEncoding.h */,
+				1615679AD67B56824D480DE6BAA2A115 /* OHCharsetEncoding.m */,
+				5D446AF86EA79AE120FE51150F4F015A /* OHConstants.h */,
+				071E91F733151818D51D723ABEA190CD /* OHJoinConstants.h */,
+				2FE7F288920AF9A6ECF315C9646DCFF9 /* OHJoinConstants.m */,
+				2927B3B1B17314A573E89B1BF41482AD /* OHLogging.h */,
+				75F5A77EF8D31AD81338B1A5E284ECF2 /* OHMappingProtocol.h */,
+				7D9D4622D65E9D8295CD3038C86B2086 /* OHMySQL.h */,
+				72E487BE7F2C6023E10DF3F9E2504CDF /* OHMySQLContainer.h */,
+				4E57B1B9CA54447FFAABA3CE1C434FA3 /* OHMySQLContainer.m */,
+				982D6687A67AFD5420E0C38A28DBC6F0 /* OHMySQLQueryContext.h */,
+				2E6E4211AF8D2BD237E240134389A75B /* OHMySQLQueryContext.m */,
+				E56D916A3F4A6B86D873DCF6060B627F /* OHMySQLQueryRequest.h */,
+				1E8C056AB30A3A04815D566458890A3D /* OHMySQLQueryRequest.m */,
+				9E5D5926E4DE093500D03FFE5E23CE45 /* OHMySQLQueryRequestFactory.h */,
+				22152F9D07BCFAD8DE30AA528A2FDF53 /* OHMySQLQueryRequestFactory.m */,
+				6E2FA3B90A62D740564E13C02D752D49 /* OHMySQLSerialization.h */,
+				12F7B1F87F0324C9AFFCEAD06429D5F5 /* OHMySQLSerialization.m */,
+				977E6300DED866F37A867CACADD799CA /* OHMySQLStore.h */,
+				4A36A95F8D15F7E0B8CE156945D172D7 /* OHMySQLStore.m */,
+				7EAF1E49DBBDED781E2A80C08D6A3A1B /* OHMySQLStoreCoordinator.h */,
+				A46FB4CA8247F66AB4E6BAEB07597640 /* OHMySQLStoreCoordinator.m */,
+				C0F6AB73D00DC4583FB06B24AE066720 /* OHMySQLTimeline.h */,
+				94D2D91A744E378778FD61C2D7E5F3EC /* OHMySQLTimeline.m */,
+				C557D90A1ABBBE7A3EFB8A009855C46F /* OHMySQLUser.h */,
+				55F488F2633E803E9DE633AB06D3490F /* OHMySQLUser.m */,
+				F94176BD4BBB32E6AF3A49A19CE8F1EF /* OHProtocolType.h */,
+				124B935CE2A1B3B5B8FC655214DC49E1 /* OHRefreshOptions.h */,
+				2DAABB7C614953C3CD4BE810D2296E74 /* OHResultErrorType.h */,
+				E3F56516C7B0FD54B6A8B753131F832A /* OHSerializationProtocol.h */,
+				3DB67D15A03B804AAEF2478D8C264634 /* OHSSLConfig.h */,
+				058615559EC770773F72628A454C8375 /* OHSSLConfig.m */,
+				49B94804EC29D4800AB826A36C400155 /* plugin_auth_common.h */,
+				3FFF6F1711136A01E2F069AC48E65F26 /* plugin_trace.h */,
+				99A89C88B5278866235B58B845F0FC07 /* psi.h */,
+				A7EC8A07CD91D9A5E333AB74F4508C7B /* psi_base.h */,
+				DA3C7DD9B667AB4C09BD70818C645585 /* psi_memory.h */,
+				310DBFD31E95A2CF9B24898A7894AC6E /* service_my_snprintf.h */,
+				10C7C3AE883822FD30B3D0AF21ED615B /* service_mysql_alloc.h */,
+				1B0AF9C157BB8CD2E0929D15586070A9 /* sql_common.h */,
+				1C9D8B0CA13C000D170FB717C67F6A6F /* sql_state.h */,
+				C85AEA14AACEE060598DA3EA141114D8 /* sslopt-case.h */,
+				996DE06647D68FB123218F41C2EDE837 /* sslopt-longopts.h */,
+				34D4DAC364FFBCB611E561D626AD3A65 /* sslopt-vars.h */,
+				3DE6EA26FEE6224812EE9A52A566C639 /* thr_cond.h */,
+				A7039BA7B23CE8D8FDA8FC8244AA1E5B /* thr_mutex.h */,
+				80D82C486777DBAA44105B551B05FA44 /* thr_rwlock.h */,
+				2F9A35C6A0698CDCBB897E2091D4A392 /* typelib.h */,
+				EBA903A051F6DDD38C2F4C316293988E /* Frameworks */,
+				F2BFD24ECFD3315DF10B58820305AE6A /* Support Files */,
+			);
+			name = OHMySQL;
+			path = OHMySQL;
+			sourceTree = "<group>";
+		};
+		6F816334182850494FA6E67B675907DC /* Pods-MiniChat */ = {
+			isa = PBXGroup;
+			children = (
+				DC417084E624A40482AF2AD282D57C0D /* Pods-MiniChat-acknowledgements.markdown */,
+				1E57777CD20DD8BD25D4B5F371555C99 /* Pods-MiniChat-acknowledgements.plist */,
+				6E00FF0A350DBF6C93773BC2CDA076F3 /* Pods-MiniChat-dummy.m */,
+				9AB34F4CBF05EA98FBCDE00DE738422A /* Pods-MiniChat.debug.xcconfig */,
+				F5AB8514DF4836409069FF8C7F867211 /* Pods-MiniChat.release.xcconfig */,
+			);
+			name = "Pods-MiniChat";
+			path = "Target Support Files/Pods-MiniChat";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				0EFC48EE4597A81B5CB6C5FF562AE2B7 /* Pods */,
+				079A49845CCBB2D744E48E7F89CB4CB0 /* Products */,
+				0586491C5B7425A790FDD3C633951EFB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBA903A051F6DDD38C2F4C316293988E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A37253A7563D55769FFA96289DD09D /* libmysqlclient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2BFD24ECFD3315DF10B58820305AE6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18FC8C6BD445E0EA596AB208397E5668 /* OHMySQL-dummy.m */,
+				43EE9B6FE73C85827149C2465B743B7C /* OHMySQL-prefix.pch */,
+				0F18050C6BD9B659012D2FF36CF52EB1 /* OHMySQL.debug.xcconfig */,
+				8140449D80C4FAFD069745C74E2F0A67 /* OHMySQL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHMySQL";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86A2698662184B040C4CEA8819D98DC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD40999B49170B2F7639B1D23F758DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC19E3500E307F3E9892DE68A706F1B8 /* big_endian.h in Headers */,
+				8ED56E2967F683CE1DF370A5CEE1D32F /* binary_log_types.h in Headers */,
+				4EAE8385151029E251545F4781D58DC8 /* byte_order_generic.h in Headers */,
+				E737C54F72EE9055D584D8052F76A322 /* byte_order_generic_x86.h in Headers */,
+				3AF575832EE766DE9D987CCBD74F2F7C /* client_authentication.h in Headers */,
+				5A7E425B28701AC8409BA47BFEED3D86 /* client_plugin.h in Headers */,
+				3F7CD95105A9042AEF018040802979D1 /* decimal.h in Headers */,
+				AC157448AEB4539EC3DD703ADDD1630C /* errmsg.h in Headers */,
+				67926CEC2E0040F11F9C3969D9689735 /* get_password.h in Headers */,
+				31568D7B311B3E809D24B9DDB3B6610E /* keycache.h in Headers */,
+				E91D76CE6ECF2EDD8417839F27B8BE52 /* little_endian.h in Headers */,
+				AE9172DCCB6D2C7F7F5AC4C987389E1A /* m_ctype.h in Headers */,
+				F23763F83D9195C566AA24AEDF9083AA /* m_string.h in Headers */,
+				607D8D5466B5DDCADF2C07A20AEA936D /* my_alloc.h in Headers */,
+				4715C52518C33935001BE586A1B74052 /* my_byteorder.h in Headers */,
+				CE84462BD8FC06509CAE5FA025F27EF8 /* my_command.h in Headers */,
+				ED9035B712A07CEAD71AA0CAB68D4FD1 /* my_compiler.h in Headers */,
+				A5840B0FAF815060DD67D4499D088EFB /* my_config.h in Headers */,
+				E0F9B6A700862BCE7C5539158B9B6FAD /* my_dbug.h in Headers */,
+				5BA5044E7AA49F25EE81DE939128224C /* my_dir.h in Headers */,
+				8CE04464C693FE62060F0C9A3D6A47AD /* my_getopt.h in Headers */,
+				98E134D0935D6E67B934B742D8943D9C /* my_global.h in Headers */,
+				7DA98BAAD4B797DCABF0582AD69217E6 /* my_list.h in Headers */,
+				9F262F07F17FCECFCD1867456F44DF41 /* my_sys.h in Headers */,
+				9302BA01FAC553CE3368BF1039713711 /* my_thread.h in Headers */,
+				077D5D7DAB80ABE4080030A05B85F867 /* my_thread_local.h in Headers */,
+				1EA50869C6EBC0061875CEF2AD61F2DF /* my_xml.h in Headers */,
+				F78AE6761451AD3CF8D590F6540F9D80 /* mysql.h in Headers */,
+				63EAC28DD4417EFFB42B5812005D2B86 /* mysql_com.h in Headers */,
+				31DD1AE5C47F9E8F547809245A4E1D20 /* mysql_com_server.h in Headers */,
+				B32F3138431710959B8ECC4BEFFB182A /* mysql_embed.h in Headers */,
+				9C97AE7E0082FEC49A07E4384426125F /* mysql_file.h in Headers */,
+				0DBB315F242F2D4F46839CC22C2A8957 /* mysql_idle.h in Headers */,
+				60B8ACE5E187C78B0AC082C18BB47A25 /* mysql_lex_string.h in Headers */,
+				003B03B5BDE1B43C9AF6CAAEC08089BC /* mysql_mdl.h in Headers */,
+				214FB32F38431A33411F9E18A1B04D22 /* mysql_memory.h in Headers */,
+				3F6D2D27257013328A8DC55ED468854D /* mysql_ps.h in Headers */,
+				DC83BFECEE48565A0269E23CEA50591D /* mysql_socket.h in Headers */,
+				D012E93821A8B1870B291475407B5FF2 /* mysql_sp.h in Headers */,
+				6D8C06B777EFCC9A7DA9C35A8F5338E7 /* mysql_stage.h in Headers */,
+				D44B4AF05D60A4FE7D7C51CF436A9B6E /* mysql_statement.h in Headers */,
+				27E015619ECF9EDC54B48010C8386646 /* mysql_table.h in Headers */,
+				426D3A77DEFEBF9A5223B41A27208E66 /* mysql_thread.h in Headers */,
+				FCE6B443ECD59C633B066449904D675C /* mysql_time.h in Headers */,
+				FE527559012C64D925F37E59EE93C3EA /* mysql_transaction.h in Headers */,
+				9D635C33166CF64D8CB3DF49A939CAB3 /* mysql_version.h in Headers */,
+				B5E74FF3A3572FD0161160ABD234B5BC /* mysqld_ername.h in Headers */,
+				41538842674134CE9A29022768B41915 /* mysqld_error.h in Headers */,
+				E4C6AECCE69C94EA5287EFA77BF3DFF1 /* NSData+OHSerialization.h in Headers */,
+				38488534AD8781FD465590D8F8015E83 /* NSNumber+OHSerialization.h in Headers */,
+				E8466F013A2FD5AA8F751833BECBAF2C /* NSObject+Mapping.h in Headers */,
+				1C7D1FDE726F1F130F6535F51E02BAD6 /* NSString+Escaping.h in Headers */,
+				FBBF53DC564BFCBC130E8E54AA161FF2 /* NSString+OHSerialization.h in Headers */,
+				5FE6E4004AF888D42EB02B70557368D7 /* NSString+Utility.h in Headers */,
+				E3E877F476C889DB466A5DB338836C32 /* OHCharsetEncoding.h in Headers */,
+				D0CD2F86F8A9AE45F5DC6882A24DBD1F /* OHConstants.h in Headers */,
+				426832CC49DFE186729CEF315E0F3D98 /* OHJoinConstants.h in Headers */,
+				B61A818C3CA490536C5D46DE82887F5A /* OHLogging.h in Headers */,
+				3D096799ACA27501EAA521469BB30709 /* OHMappingProtocol.h in Headers */,
+				391F1A370F697F7F1F1DBF5A6984C350 /* OHMySQL.h in Headers */,
+				036724E0C89AB6F267BF22E5E9982FE2 /* OHMySQLContainer.h in Headers */,
+				2FDA3FD788B4C94DDE2E8F55B050F424 /* OHMySQLQueryContext.h in Headers */,
+				4BD1514BEC5554F77D35A84CB6FD5207 /* OHMySQLQueryRequest.h in Headers */,
+				4F0BD44B4DF9BC0D9F3D9C8F672EFBB1 /* OHMySQLQueryRequestFactory.h in Headers */,
+				8A99D0808951425F32013B346A311163 /* OHMySQLSerialization.h in Headers */,
+				2E6D157B68CF9141B907F8D7BEF5B10F /* OHMySQLStore.h in Headers */,
+				B8A5CED5FE57B693BA041820F98FA42B /* OHMySQLStoreCoordinator.h in Headers */,
+				2861B9B63FA749973D72F9D2A9F7F170 /* OHMySQLTimeline.h in Headers */,
+				36CC0064E02320CD87A0CC78A70EE38C /* OHMySQLUser.h in Headers */,
+				68278E2BF588B6FA5A18D5E439E24694 /* OHProtocolType.h in Headers */,
+				A9785A87A037F5427876A9CC58958724 /* OHRefreshOptions.h in Headers */,
+				2C16B25055F2805E28E8887517D4F113 /* OHResultErrorType.h in Headers */,
+				F650554DB87C5D546448104A70D5CD66 /* OHSerializationProtocol.h in Headers */,
+				102A0F9B874E78E11528262BDF9F9A33 /* OHSSLConfig.h in Headers */,
+				7AB8610E856A2AA6D0117F359F7453E5 /* plugin_auth_common.h in Headers */,
+				54A370DE5F2EEB632A811DD00A101694 /* plugin_trace.h in Headers */,
+				2AB4EEA4B2A58BABED726A6EC5F6AC88 /* psi.h in Headers */,
+				8D283CB637B57E8C982F7DB5C0C2B71C /* psi_base.h in Headers */,
+				E08214BCB2F68658A84FD0BEE876933F /* psi_memory.h in Headers */,
+				55C30B2376336E25DB293975D50D2929 /* service_my_snprintf.h in Headers */,
+				526BAA4396EA1A6265EAD59FC8329337 /* service_mysql_alloc.h in Headers */,
+				2E74EC924C90ECECF51292A066ACF08F /* sql_common.h in Headers */,
+				46F405EB138716C484AD0CAD69EC4731 /* sql_state.h in Headers */,
+				87ABDE61AE2A52C3034EF0FA46B8254D /* sslopt-case.h in Headers */,
+				E625F1D8F13908BCB31B0C770888B894 /* sslopt-longopts.h in Headers */,
+				7E12DCD8C3F00EED3D808406EBBCE753 /* sslopt-vars.h in Headers */,
+				775EA6DF1B7E04B536C5FC70DDE57F1D /* thr_cond.h in Headers */,
+				432C30A87FDBDEC4E9FCB9D9A893F7EB /* thr_mutex.h in Headers */,
+				6275E949ED749904EA6F7B525F0975CA /* thr_rwlock.h in Headers */,
+				BE629E3C49368694A410589EE80EA1AE /* typelib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34065A3BE24090EF388CC7E7BE87A00B /* Build configuration list for PBXNativeTarget "OHMySQL" */;
+			buildPhases = (
+				9AD40999B49170B2F7639B1D23F758DB /* Headers */,
+				2AB99740FB6E578294F8C5A6EE30F091 /* Sources */,
+				48574C0959195F987252077E86420B31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHMySQL;
+			productName = OHMySQL;
+			productReference = 6DFAC0AC09F4F682430C400379B7E587 /* libOHMySQL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4B621B47976DD820D1E6A4624247995 /* Pods-MiniChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5987B94F03CDA10487B2687719E8C7FD /* Build configuration list for PBXNativeTarget "Pods-MiniChat" */;
+			buildPhases = (
+				86A2698662184B040C4CEA8819D98DC1 /* Headers */,
+				946CD6CAF6C4AFB23CE3942EC3202FE2 /* Sources */,
+				894EF3E55940249DF3C3F3AE3A4EF594 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8B0229BDE7D19ECDCD80C95384DBE47 /* PBXTargetDependency */,
+			);
+			name = "Pods-MiniChat";
+			productName = "Pods-MiniChat";
+			productReference = EA5733555F728F10B8110CECB0B33843 /* libPods-MiniChat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 079A49845CCBB2D744E48E7F89CB4CB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */,
+				F4B621B47976DD820D1E6A4624247995 /* Pods-MiniChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AB99740FB6E578294F8C5A6EE30F091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC83B849F32DA74AAEB675CC0D423F9 /* NSData+OHSerialization.m in Sources */,
+				876F1669E37EF1C2491030CE8E478E51 /* NSNumber+OHSerialization.m in Sources */,
+				F0426D6FDE444137BD57F71DDE3DB279 /* NSObject+Mapping.m in Sources */,
+				DD6B34CBE5B22BB12DB7C80321F99902 /* NSString+Escaping.m in Sources */,
+				11E69C94E39BFAE6EF58BB900A20B26B /* NSString+OHSerialization.m in Sources */,
+				2F93DC1ADBAA17DDDB6871C752254D5A /* NSString+Utility.m in Sources */,
+				01F98D168BDB35B2D0ABBC0D6C9E2E2A /* OHCharsetEncoding.m in Sources */,
+				774F76C050D06CC14C2FCC1DD9A892B8 /* OHJoinConstants.m in Sources */,
+				F2572688AFD089FCA430754E4BD4F419 /* OHMySQL-dummy.m in Sources */,
+				48A8C496DF0E78D5704CDE5F7DF90B88 /* OHMySQLContainer.m in Sources */,
+				29D16DBD88491A4D215CEAF552211391 /* OHMySQLQueryContext.m in Sources */,
+				E037C24B9870A411829793AC1EC6AB9F /* OHMySQLQueryRequest.m in Sources */,
+				8BA1E2251FB0F7912ACD57542B8A0F2C /* OHMySQLQueryRequestFactory.m in Sources */,
+				84FBB8E94069C00498F5899EC7CBBD96 /* OHMySQLSerialization.m in Sources */,
+				E4220ADA8174ABDE6A53BD207152C8BA /* OHMySQLStore.m in Sources */,
+				90EC7030EF37FE709EE775C33EB082CC /* OHMySQLStoreCoordinator.m in Sources */,
+				DA6685322607B0ED4B5CCFD8AE39AB69 /* OHMySQLTimeline.m in Sources */,
+				B0F45EA524A8570D419D6E9D58C89B59 /* OHMySQLUser.m in Sources */,
+				29A4A8FBF3964446202AAE38A41BF218 /* OHSSLConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946CD6CAF6C4AFB23CE3942EC3202FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73D56524614C9DB3F0D8B1A4CDE988A /* Pods-MiniChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8B0229BDE7D19ECDCD80C95384DBE47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHMySQL;
+			target = 523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */;
+			targetProxy = 24E19DBCD7E304EBC1A383A58EB7F42F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17E4F8B7FCD3B927BCF9C44DB45B8407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB8514DF4836409069FF8C7F867211 /* Pods-MiniChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		765236E204B59B3443CBDD544163BDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F18050C6BD9B659012D2FF36CF52EB1 /* OHMySQL.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C3380F6DB29130D1BDABD41CBF81C6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8140449D80C4FAFD069745C74E2F0A67 /* OHMySQL.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FD152E9AF3530904185ADF4E177A5F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB34F4CBF05EA98FBCDE00DE738422A /* Pods-MiniChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34065A3BE24090EF388CC7E7BE87A00B /* Build configuration list for PBXNativeTarget "OHMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765236E204B59B3443CBDD544163BDA0 /* Debug */,
+				C3380F6DB29130D1BDABD41CBF81C6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5987B94F03CDA10487B2687719E8C7FD /* Build configuration list for PBXNativeTarget "Pods-MiniChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD152E9AF3530904185ADF4E177A5F59 /* Debug */,
+				17E4F8B7FCD3B927BCF9C44DB45B8407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
