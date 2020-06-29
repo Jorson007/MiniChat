@@ -39,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "73F4BBB0-EFB6-49A4-9BE4-C122E84954B6"
+            uuid = "ECE04A1E-5B64-41F9-8C76-99D363599390"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MiniChat/KWVC/KWTalkViewController.m"
+            filePath = "MiniChat/KWManager/KWSocketManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-transformView:"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-sendMsg:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

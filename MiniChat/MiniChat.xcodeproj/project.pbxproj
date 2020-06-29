@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,14 @@
 		F860B16D24952F780016AF1D /* pengyouquan.png in Resources */ = {isa = PBXBuildFile; fileRef = F860B16C24952F780016AF1D /* pengyouquan.png */; };
 		F860B16F249531C30016AF1D /* xiaochengxu.png in Resources */ = {isa = PBXBuildFile; fileRef = F860B16E249531C30016AF1D /* xiaochengxu.png */; };
 		F860B172249532510016AF1D /* KWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F860B171249532510016AF1D /* KWSettingViewController.m */; };
+		F861087624AA1E5B001D908C /* KWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F861087524AA1E5B001D908C /* KWTableViewController.m */; };
+		F861087924AA1EC1001D908C /* KWMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F861087824AA1EC1001D908C /* KWMessageModel.m */; };
+		F861087C24AA1F90001D908C /* KWMessageFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F861087B24AA1F90001D908C /* KWMessageFrameModel.m */; };
+		F861087F24AA215E001D908C /* KWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F861087E24AA215E001D908C /* KWTableViewCell.m */; };
+		F861088224AA33A6001D908C /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = F861088024AA33A6001D908C /* girl.png */; };
+		F861088324AA33A6001D908C /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = F861088124AA33A6001D908C /* boy.png */; };
+		F861088624AA350D001D908C /* KWRightMessageFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F861088524AA350D001D908C /* KWRightMessageFrameModel.m */; };
+		F874A1F124A8DF90004FA098 /* KWSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F874A1F024A8DF90004FA098 /* KWSocketManager.m */; };
 		F8956F9E2495C15A00A1D823 /* KWUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8956F9D2495C15A00A1D823 /* KWUserInfo.m */; };
 		F8956FA12495C27E00A1D823 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8956FA02495C27E00A1D823 /* ViewController.m */; };
 		F8956FA42495C2CB00A1D823 /* KWMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8956FA32495C2CB00A1D823 /* KWMessageInfo.m */; };
@@ -135,6 +143,21 @@
 		F860B16E249531C30016AF1D /* xiaochengxu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaochengxu.png; sourceTree = "<group>"; };
 		F860B170249532510016AF1D /* KWSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingViewController.h; sourceTree = "<group>"; };
 		F860B171249532510016AF1D /* KWSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingViewController.m; sourceTree = "<group>"; };
+		F861087424AA1E5B001D908C /* KWTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWTableViewController.h; sourceTree = "<group>"; };
+		F861087524AA1E5B001D908C /* KWTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWTableViewController.m; sourceTree = "<group>"; };
+		F861087724AA1EC1001D908C /* KWMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWMessageModel.h; sourceTree = "<group>"; };
+		F861087824AA1EC1001D908C /* KWMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWMessageModel.m; sourceTree = "<group>"; };
+		F861087A24AA1F90001D908C /* KWMessageFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWMessageFrameModel.h; sourceTree = "<group>"; };
+		F861087B24AA1F90001D908C /* KWMessageFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWMessageFrameModel.m; sourceTree = "<group>"; };
+		F861087D24AA215E001D908C /* KWTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWTableViewCell.h; sourceTree = "<group>"; };
+		F861087E24AA215E001D908C /* KWTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWTableViewCell.m; sourceTree = "<group>"; };
+		F861088024AA33A6001D908C /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		F861088124AA33A6001D908C /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy.png; sourceTree = "<group>"; };
+		F861088424AA350D001D908C /* KWRightMessageFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRightMessageFrameModel.h; sourceTree = "<group>"; };
+		F861088524AA350D001D908C /* KWRightMessageFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRightMessageFrameModel.m; sourceTree = "<group>"; };
+		F874A1EF24A8DF90004FA098 /* KWSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSocketManager.h; sourceTree = "<group>"; };
+		F874A1F024A8DF90004FA098 /* KWSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSocketManager.m; sourceTree = "<group>"; };
+		F894825124A74CF100A8B199 /* MiniChat-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniChat-PrefixHeader.pch"; sourceTree = "<group>"; };
 		F8956F9C2495C15A00A1D823 /* KWUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWUserInfo.h; sourceTree = "<group>"; };
 		F8956F9D2495C15A00A1D823 /* KWUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWUserInfo.m; sourceTree = "<group>"; };
 		F8956F9F2495C27E00A1D823 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -220,6 +243,8 @@
 		F860B0C32494636D0016AF1D /* MiniChat */ = {
 			isa = PBXGroup;
 			children = (
+				F874A1EE24A8DF67004FA098 /* KWManager */,
+				F894824D24A7406D00A8B199 /* KWView */,
 				F8D8B7EE24965A16005624D9 /* KWTC */,
 				F8956FA52496438100A1D823 /* KWDB */,
 				F860B10E2494883C0016AF1D /* KWModel */,
@@ -234,6 +259,7 @@
 				F860B0D22494636E0016AF1D /* LaunchScreen.storyboard */,
 				F860B0D52494636E0016AF1D /* Info.plist */,
 				F860B0D62494636E0016AF1D /* main.m */,
+				F894825124A74CF100A8B199 /* MiniChat-PrefixHeader.pch */,
 			);
 			path = MiniChat;
 			sourceTree = "<group>";
@@ -259,6 +285,8 @@
 		F860B0F9249468B10016AF1D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F861088124AA33A6001D908C /* boy.png */,
+				F861088024AA33A6001D908C /* girl.png */,
 				F89CC8FB249F98B80092B3D5 /* biaoqing1.png */,
 				F89CC8F9249F977D0092B3D5 /* fasong1.png */,
 				F89CC8F7249F96440092B3D5 /* fasong.png */,
@@ -312,6 +340,8 @@
 				F860B171249532510016AF1D /* KWSettingViewController.m */,
 				F89CC8F4249F8D240092B3D5 /* KWTalkViewController.h */,
 				F89CC8F5249F8D240092B3D5 /* KWTalkViewController.m */,
+				F861087424AA1E5B001D908C /* KWTableViewController.h */,
+				F861087524AA1E5B001D908C /* KWTableViewController.m */,
 			);
 			path = KWVC;
 			sourceTree = "<group>";
@@ -323,8 +353,32 @@
 				F8956F9D2495C15A00A1D823 /* KWUserInfo.m */,
 				F8956FA22495C2CB00A1D823 /* KWMessageInfo.h */,
 				F8956FA32495C2CB00A1D823 /* KWMessageInfo.m */,
+				F861087724AA1EC1001D908C /* KWMessageModel.h */,
+				F861087824AA1EC1001D908C /* KWMessageModel.m */,
+				F861087A24AA1F90001D908C /* KWMessageFrameModel.h */,
+				F861087B24AA1F90001D908C /* KWMessageFrameModel.m */,
+				F861088424AA350D001D908C /* KWRightMessageFrameModel.h */,
+				F861088524AA350D001D908C /* KWRightMessageFrameModel.m */,
 			);
 			path = KWModel;
+			sourceTree = "<group>";
+		};
+		F874A1EE24A8DF67004FA098 /* KWManager */ = {
+			isa = PBXGroup;
+			children = (
+				F874A1EF24A8DF90004FA098 /* KWSocketManager.h */,
+				F874A1F024A8DF90004FA098 /* KWSocketManager.m */,
+			);
+			path = KWManager;
+			sourceTree = "<group>";
+		};
+		F894824D24A7406D00A8B199 /* KWView */ = {
+			isa = PBXGroup;
+			children = (
+				F861087D24AA215E001D908C /* KWTableViewCell.h */,
+				F861087E24AA215E001D908C /* KWTableViewCell.m */,
+			);
+			path = KWView;
 			sourceTree = "<group>";
 		};
 		F8956FA52496438100A1D823 /* KWDB */ = {
@@ -356,6 +410,7 @@
 				F860B0BD2494636D0016AF1D /* Sources */,
 				F860B0BE2494636D0016AF1D /* Frameworks */,
 				F860B0BF2494636D0016AF1D /* Resources */,
+				7EE03F6DF9A7DF67DD8BAB54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,12 +507,14 @@
 				F860B15424951F870016AF1D /* xinxi.png in Resources */,
 				F860B14A24951F870016AF1D /* denglu.png in Resources */,
 				F860B16524952C930016AF1D /* shopping-bag.png in Resources */,
+				F861088324AA33A6001D908C /* boy.png in Resources */,
 				F860B16624952C930016AF1D /* yaoyiyao.png in Resources */,
 				F860B159249520CD0016AF1D /* shezhi.png in Resources */,
 				F860B14E24951F870016AF1D /* biaoqing.png in Resources */,
 				F860B15B249528490016AF1D /* touxiang.png in Resources */,
 				F860B14B24951F870016AF1D /* next.png in Resources */,
 				F860B16424952C930016AF1D /* houtaishezhi.png in Resources */,
+				F861088224AA33A6001D908C /* girl.png in Resources */,
 				F860B0D42494636E0016AF1D /* LaunchScreen.storyboard in Resources */,
 				F860B14D24951F870016AF1D /* kabao.png in Resources */,
 				F860B15324951F870016AF1D /* wode.png in Resources */,
@@ -522,6 +579,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7EE03F6DF9A7DF67DD8BAB54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniChat/Pods-MiniChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniChat/Pods-MiniChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniChat/Pods-MiniChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,6 +609,8 @@
 				F860B10324946BB10016AF1D /* KWSecondViewController.m in Sources */,
 				F860B0D72494636E0016AF1D /* main.m in Sources */,
 				F8956FA12495C27E00A1D823 /* ViewController.m in Sources */,
+				F861087924AA1EC1001D908C /* KWMessageModel.m in Sources */,
+				F861087F24AA215E001D908C /* KWTableViewCell.m in Sources */,
 				F860B10924946BD30016AF1D /* KWFourthViewController.m in Sources */,
 				F860B0C92494636D0016AF1D /* SceneDelegate.m in Sources */,
 				F860B10624946BC00016AF1D /* KWThirdViewController.m in Sources */,
@@ -543,8 +619,12 @@
 				F860B10024946BA10016AF1D /* KWFirstViewController.m in Sources */,
 				F8956FA8249643B900A1D823 /* KWDBOperate.m in Sources */,
 				F8D8B7F124965AC1005624D9 /* KWToastView.m in Sources */,
+				F861088624AA350D001D908C /* KWRightMessageFrameModel.m in Sources */,
 				F89CC8F6249F8D240092B3D5 /* KWTalkViewController.m in Sources */,
+				F861087624AA1E5B001D908C /* KWTableViewController.m in Sources */,
+				F874A1F124A8DF90004FA098 /* KWSocketManager.m in Sources */,
 				F860B172249532510016AF1D /* KWSettingViewController.m in Sources */,
+				F861087C24AA1F90001D908C /* KWMessageFrameModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +797,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniChat/MiniChat-PrefixHeader.pch";
 				INFOPLIST_FILE = MiniChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -735,6 +817,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniChat/MiniChat-PrefixHeader.pch";
 				INFOPLIST_FILE = MiniChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

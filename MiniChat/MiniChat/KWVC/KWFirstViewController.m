@@ -73,7 +73,7 @@
     KWTalkViewController *talkVC = [[KWTalkViewController alloc] init];
     talkVC.view.backgroundColor = [UIColor whiteColor];
     talkVC.hidesBottomBarWhenPushed = YES;
-    talkVC.title = @"xiaoxi";
+    talkVC.title = @"消息";
     [self.navigationController pushViewController:talkVC animated:YES];
     self.navigationController.navigationBar.topItem.title = @"";
 

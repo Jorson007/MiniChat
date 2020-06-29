@@ -1,16 +1,73 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.4)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HYBMasonryAutoCellHeight (2.0.1):
+    - Masonry (~> 0.6)
+  - Masonry (0.6.4)
+  - MJRefresh (3.4.3)
   - OHMySQL (2.1.3)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
+  - SocketRocket (0.5.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking
+  - CocoaAsyncSocket
+  - FMDB
+  - HYBMasonryAutoCellHeight
+  - Masonry
+  - MJRefresh
   - OHMySQL
+  - SDWebImage
+  - SocketRocket
+  - YYKit
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
+    - CocoaAsyncSocket
+    - FMDB
+    - HYBMasonryAutoCellHeight
+    - Masonry
+    - MJRefresh
     - OHMySQL
+    - SDWebImage
+    - SocketRocket
+    - YYKit
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HYBMasonryAutoCellHeight: 9296583777080d32ba6257f55e52b7334dd481fc
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   OHMySQL: 8bc54d2b8b9e1acfa0e652b18856a9cdbb24c431
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2e6d7f000fbcc7f52571e10aad12344c157567d8
+PODFILE CHECKSUM: 74c8c7052f09cf038af43fd1c1a279e91922992f
 
 COCOAPODS: 1.9.3

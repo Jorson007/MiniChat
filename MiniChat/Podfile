@@ -1,5 +1,14 @@
 project 'MiniChat.xcodeproj'
 target 'MiniChat' do
   pod 'OHMySQL'
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'HYBMasonryAutoCellHeight'
+  pod 'YYKit'
+  pod 'SDWebImage'
+  pod 'AFNetworking'
+  pod 'SocketRocket'
+  pod 'FMDB'
+  pod 'CocoaAsyncSocket'
 
 end
