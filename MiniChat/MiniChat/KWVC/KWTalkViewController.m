@@ -12,6 +12,8 @@
 #import "KWMessageModel.h"
 #import "KWRightMessageFrameModel.h"
 
+static BOOL isShowPanel = false;
+
 @interface KWTalkViewController ()
 
 @property (nonatomic,strong) NSMutableArray *dataArray;
@@ -19,12 +21,16 @@
 @property (strong, nonatomic) IBOutlet UIImageView *send;
 @property (strong, nonatomic) IBOutlet UIImageView *emoj;
 @property (strong, nonatomic) IBOutlet UIView *bottomview;
+@property (strong, nonatomic) IBOutlet UIView *toolsview;
 
 @property (strong, nonatomic) KWTableViewController *tableVC;
 
 @end
 
 @implementation KWTalkViewController
+{
+    
+}
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -41,8 +47,10 @@
     
     _tableVC = [[KWTableViewController alloc] init];
     [_tableVC.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height-60)];
-//    tableVC.view.backgroundColor = [UIColor redColor];
-    
+    //初始化一个手势
+    UITapGestureRecognizer *singleTap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closePanel:)];
+    //为图片添加手势
+    [_tableVC.view addGestureRecognizer:singleTap1];
     [self addChildViewController:_tableVC];
     
     [self.view addSubview:_tableVC.view];
@@ -58,12 +66,12 @@
     _message.layer.cornerRadius=5;
     [self.view addSubview:_message];
     
-    _send = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width-60, self.view.frame.size.height-56, 50, 52)];
+    _send = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width-50, self.view.frame.size.height-52, 40, 40)];
     //initWithFrame控制位置和尺寸
-    _send.image = [UIImage imageNamed:@"fasong.png"];
+    _send.image = [UIImage imageNamed:@"tianjia.png"];
     _send.userInteractionEnabled = YES;//打开用户交互
     //初始化一个手势
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(senMessageAction:)];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPanel:)];
     //为图片添加手势
     [_send addGestureRecognizer:singleTap];
 
@@ -77,7 +85,7 @@
     
     [self.view addSubview:_emoj];
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(transformView:) name:UIKeyboardWillChangeFrameNotification object:nil];
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(transformView:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
     [[KWSocketManager share] connect];
 }
@@ -105,53 +113,129 @@
     [[KWSocketManager share] disConnect];
 
 }
-#pragma mark - UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.dataArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-
-//    CellChatList *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CellChatList class])];
-//    if (indexPath.row < self.dataArray.count) {
-//        cell.model         = self.dataArray[indexPath.row];
-//        cell.touchDelegate = self;
-//    }
-//    return cell;
-    return nil;
-}
-
-#pragma mark - UITableViewDelegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-
-    return 60.0f;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-//    YHChatDetailVC *vc = [[YHChatDetailVC alloc] init];
-//    vc.model = self.dataArray[indexPath.row];
-//    vc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-- (void)senMessageAction:(UIGestureRecognizer *)gestureRecognizer{
+//弹出下侧panel
+- (void)showPanel:(UIGestureRecognizer *)gestureRecognizer{
      //do something....
+    if(!isShowPanel){
+     isShowPanel = true;
+     CGFloat deltaY = -220;
+     [UIView animateWithDuration:0.25f animations:^{
+         [self->_message setFrame:CGRectMake(self->_message.frame.origin.x, self->_message.frame.origin.y+deltaY, self->_message.frame.size.width, self->_message.frame.size.height)];
+         [self->_bottomview setFrame:CGRectMake(self->_bottomview.frame.origin.x, self->_bottomview.frame.origin.y+deltaY, self->_bottomview.frame.size.width, self->_bottomview.frame.size.height)];
+         [self->_send setFrame:CGRectMake(self->_send.frame.origin.x, self->_send.frame.origin.y + deltaY, self->_send.frame.size.width, self->_send.frame.size.height)];
+         [self->_emoj setFrame:CGRectMake(self->_emoj.frame.origin.x, self->_emoj.frame.origin.y+deltaY, self->_emoj.frame.size.width, self->_emoj.frame.size.height)];
+     }];
+    }
+    
+    [self showGridView];
+    
+//    [self sendMessage];
+}
+
+-(void)showGridView{
+    // 假设每行的应用的个数
+    int columns = 4;
+
+    _toolsview = [[UIView alloc] init];
+    _toolsview.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.size.height-220, self.view.frame.size.width, 220);
+    [self.view addSubview:_toolsview];
+
+    // 每个应用的宽和高
+    CGFloat appW = 90;
+    CGFloat appH = 90;
+    CGFloat marginTop = 20; // 第一行距离顶部的距离
+    CGFloat marginX = 10;
+    CGFloat marginY = marginX; // 假设每行之间的间距与marginX相等
+    NSArray *toolName = @[@"照片",@"拍摄",@"视频通话",@"位置",@"红包",@"转账",@"语音输入",@"收藏"];
+    NSArray *picName = @[@"picture-fill",@"paishe",@"iocnshiping",@"weibiaoti6",@"tianchongxing-",@"zhuanzhang",@"yuyin",@"shoucangblack"];
+        for (int i = 0; i < 8; i++) {
+
+            // 1. 创建每个应用(UIView)
+            UIView *appView = [[UIView alloc] init];
+
+            // 2. 设置appView的属性
+            // 2.1 设置appView的背景色
+            appView.backgroundColor = [UIColor whiteColor];
+
+
+            // 2.2 设置appView的frame属性
+            // 计算每个单元格所在的列的索引
+            int colIdx = i % columns;
+            // 计算每个单元格的行索引
+            int rowIdx = i / columns;
+
+            CGFloat appX = marginX + colIdx * (appW + marginX);
+            CGFloat appY = marginTop + rowIdx * (appH + marginY);
+            appView.frame = CGRectMake(appX, appY, appW, appH);
+
+            // 3. 将appView加到self.view(控制器所管理的那个view)
+            [_toolsview addSubview:appView];
+
+
+            // 4. 向UIView中增加子控件
+            // 4.1 增加一个图片框
+            UIImageView *imgViewIcon = [[UIImageView alloc] init];
+            // 设置背景色
+            //imgViewIcon.backgroundColor = [UIColor yellowColor];
+            // 设置frame
+            CGFloat iconW = 45;
+            CGFloat iconH = 45;
+            CGFloat iconX = (appView.frame.size.width - iconW) * 0.5;
+            CGFloat iconY = 0;
+            imgViewIcon.frame = CGRectMake(iconX, iconY, iconW, iconH);
+
+            // 把图片框添加到appView中
+            [appView addSubview:imgViewIcon];
+            // 设置图片框的数据
+            imgViewIcon.image = [UIImage imageNamed:picName[i]];
+
+
+            // 4.2 增加一个Label(标签)
+            // 创建Label
+            UILabel *lblName = [[UILabel alloc] init];
+            // 设置背景色
+            //lblName.backgroundColor = [UIColor redColor];
+            // 设置frame
+            CGFloat nameW = appView.frame.size.width;
+            CGFloat nameH = 20;
+            CGFloat nameY = iconH;
+            CGFloat nameX = 0;
+            lblName.frame = CGRectMake(nameX, nameY, nameW, nameH);
+            // 添加到appView中
+            [appView addSubview:lblName];
+            // 设置lable的数据（标题）
+            lblName.text = toolName[i];
+            // 设置lable的文字的字体大小
+            lblName.font = [UIFont systemFontOfSize:12];
+            // 设置文字居中对齐
+            lblName.textAlignment = NSTextAlignmentCenter;
+
+        }
+}
+
+//关掉下侧panel
+- (void)closePanel:(UIGestureRecognizer *)gestureRecognizer{
+     //do something....
+    if(isShowPanel){
+     isShowPanel = false;
+        _toolsview.hidden = true;
+     CGFloat deltaY = 220;
+     [UIView animateWithDuration:0.25f animations:^{
+         [self->_message setFrame:CGRectMake(self->_message.frame.origin.x, self->_message.frame.origin.y+deltaY, self->_message.frame.size.width, self->_message.frame.size.height)];
+         [self->_bottomview setFrame:CGRectMake(self->_bottomview.frame.origin.x, self->_bottomview.frame.origin.y+deltaY, self->_bottomview.frame.size.width, self->_bottomview.frame.size.height)];
+         [self->_send setFrame:CGRectMake(self->_send.frame.origin.x, self->_send.frame.origin.y + deltaY, self->_send.frame.size.width, self->_send.frame.size.height)];
+         [self->_emoj setFrame:CGRectMake(self->_emoj.frame.origin.x, self->_emoj.frame.origin.y+deltaY, self->_emoj.frame.size.width, self->_emoj.frame.size.height)];
+     }];
+    }
+//    [self sendMessage];
+}
+
+-(void)sendMessage{
     if (_message.text.length == 0) {
         return;
     }
-//    NSMutableArray *messages = _tableVC.KWInfoArray;
+    //    NSMutableArray *messages = _tableVC.KWInfoArray;
     NSDictionary *dict = @{@"name" : _message.text, @"icon" : @"girl.png", @"text" : @""};
     KWMessageModel *model = [KWMessageModel modelWithDict:dict];
     KWRightMessageFrameModel *frameModel = [[KWRightMessageFrameModel alloc] init];
@@ -160,15 +244,5 @@
     [_tableVC.tableView reloadData];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
