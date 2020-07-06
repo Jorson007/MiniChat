@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"消息";
+    self.title = @"联系人";
     KWDBOperate *operate = [[KWDBOperate alloc] initCoordWithDbName:@"wechat"];
     if(operate != nil){
         NSArray *users = [operate queryUserInfo];
